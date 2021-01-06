@@ -20,7 +20,10 @@ def find_file_size(file):
         return convert_bytes(file_info.st_size)
 
 
-file_path = r"C:\seleniumProject/log1.txt"
-target = open(file_path, 'w')
-target.writelines()
+file_path = "C:\seleniumProject/log1.txt"
+file_path1 = "C:\seleniumProject/log2.txt"
+
 size1=find_file_size(file_path)
+while( str(size1)=="2 MB"):
+    with open(file_path, "w") as fh:
+        fh.writelines('#file , while printing the data from the suffix with present date and time of the system.')
